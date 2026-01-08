@@ -15,11 +15,8 @@ pub fn solve_day5_2(filename: &str){
     let content = read_to_string(filename).unwrap();
     let mut line_iter = content.lines();
     let mut range_vec = create_ranges(&mut line_iter);
-    
-    println!("before merge: {:?}", range_vec);
     let counter = merge_all(&mut range_vec);
-    println!("after merge: {:?}", range_vec);
-    println!("counter: {:?}", counter);
+    println!("solution to solve_day5_2: {:?}", counter);
 }
 
 pub fn merge_all(range_vec: &mut Vec<[i64;2]>) -> i64{
