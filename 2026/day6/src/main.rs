@@ -1,6 +1,6 @@
-use day6::solve_day6_1;
+use day6::solve_day6_2;
 
 fn main() {
     let filename = "input.txt";
-    solve_day6_1(filename);
+    solve_day6_2(filename);
 }
